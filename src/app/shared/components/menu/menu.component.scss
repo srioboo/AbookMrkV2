@@ -1,0 +1,46 @@
+@import 'src/assets/scss/styles';
+
+nav {
+  background-color: $wine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  //height: 50px;
+  align-items: center;
+
+
+  .menu {
+    margin: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    min-width: 25vw;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      margin: 5px 0px;
+      height: 50px;
+    }
+  }
+}
+
+/*.selected {
+    background-color: $gray-400;
+}
+
+.navbar-collapse {
+    &.collapse, &.collapsing {
+        position: fixed;
+        float: left;
+        display: block;
+        background-color: $white;
+        border: 1px solid $gray-600;
+        min-width: 20vw;
+        min-height: 100vh;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}*/

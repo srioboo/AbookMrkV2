@@ -1,0 +1,58 @@
+/* You can add global styles to this file,
+   and also import other style files */
+
+// Inicialición componentes
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* importatando los estilos aqui en lugar de en angular.json nos permite sobreescribir estilos
+   que que esten en bootstrap
+*/
+/*@import '~bootstrap/scss/bootstrap-reboot';*/
+/*@import '~bootstrap/scss/bootstrap-grid';*/
+
+
+/*@import '~bootstrap/scss/bootstrap';*/
+
+/* aqui como se importan uno a uno, esto mejor ponerlo en cada componente */
+
+/*@import '~bootstrap/scss/_alert';
+@import '~bootstrap/scss/_navbar';
+@import '~bootstrap/scss/_nav';
+@import '~bootstrap/scss/_input-group';
+@import '~bootstrap/scss/_button-group';
+@import '~bootstrap/scss/_buttons';
+@import '~bootstrap/scss/_forms';*/
+
+// Colores
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$brown:   #856404 !default;
+$yellow-ligth: #fff3cd !default;
+$yellow-semiligth: #ffeeba !default;
+
+$wine: rgb(58, 0, 0) !default;

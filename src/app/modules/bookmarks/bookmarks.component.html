@@ -1,0 +1,29 @@
+
+<div class="row">
+  <input type="button" name="addGroup" value="add grupo" class="btn btn-primary" />
+</div>
+<!-- <div (click)="getBookmarkSelected()">Seleccionado: {{bookmark}}</div>
+<input [(ngModel)]="bookmark"/> -->
+<div class="flex-container" *ngFor="let bkmGrp of datosService.getBookmarks()" >
+  <div class="title flex-item">
+    <div class="flex-item"
+         data-toggle="collapse" [attr.data-target]="'#seccion_' + bkmGrp.id"
+         aria-expanded="true"
+         aria-controls="collapseExample">
+      {{bkmGrp.nombre | uppercase}}
+
+    </div>
+    <div class="flex-item">
+      <input (click)="changeEditMode()" type="button" name="name" value="edit" class="btn btn-primary"/>
+    </div>
+  </div>
+  <div [id]="'seccion_' + bkmGrp.id" class="flex-item show">
+    <div class="row" *ngFor="let bk of bkmGrp.direcciones">
+      <div class="col-4" *ngIf="!editMode">{{bk.name}}</div>
+      <div class="col-4" *ngIf="editMode"><input [(ngModel)]="bk.name"/></div>
+
+      <div class="col-8" *ngIf="!editMode"><a href="{{bk.url}}">{{bk.url}}</a></div>
+      <div class="col-8" *ngIf="editMode"><input [(ngModel)]="bk.url"/></div>
+    </div>
+  </div>
+</div>
