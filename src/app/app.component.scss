@@ -1,0 +1,24 @@
+@import 'src/assets/scss/styles';
+
+.flex-container {
+  display: flex;
+  flex-direction: row; /* disposición en columna */
+  flex-wrap: nowrap; /* */
+  justify-content: flex-start;
+
+  .flex-item {
+    display: inherit;
+    align-items: flex-start; /* alinea por altura */
+    //margin: 5px 20px;
+  }
+
+  .nav {
+    /*flex-grow: 1;*/
+    flex: 1 0 20%;
+  }
+
+  .main {
+    /*flex-grow: 10;*/
+    flex: 0 0 70%
+  }
+}
