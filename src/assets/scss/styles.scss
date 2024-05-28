@@ -11,21 +11,21 @@
 /* importatando los estilos aqui en lugar de en angular.json nos permite sobreescribir estilos
    que que esten en bootstrap
 */
-/*@import '~bootstrap/scss/bootstrap-reboot';*/
-/*@import '~bootstrap/scss/bootstrap-grid';*/
+/*@import 'bootstrap/scss/bootstrap-reboot';*/
+/*@import 'bootstrap/scss/bootstrap-grid';*/
 
 
-/*@import '~bootstrap/scss/bootstrap';*/
+/*@import 'bootstrap/scss/bootstrap';*/
 
 /* aqui como se importan uno a uno, esto mejor ponerlo en cada componente */
 
-/*@import '~bootstrap/scss/_alert';
-@import '~bootstrap/scss/_navbar';
-@import '~bootstrap/scss/_nav';
-@import '~bootstrap/scss/_input-group';
-@import '~bootstrap/scss/_button-group';
-@import '~bootstrap/scss/_buttons';
-@import '~bootstrap/scss/_forms';*/
+/*@import 'bootstrap/scss/_alert';
+@import 'bootstrap/scss/_navbar';
+@import 'bootstrap/scss/_nav';
+@import 'bootstrap/scss/_input-group';
+@import 'bootstrap/scss/_button-group';
+@import 'bootstrap/scss/_buttons';
+@import 'bootstrap/scss/_forms';*/
 
 // Colores
 $white:    #fff !default;
