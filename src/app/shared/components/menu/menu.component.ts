@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 //import { BOOKMARKS } from '../mock-bookmarks';
 import { Bookmarks } from 'src/app/services/bookmarks';
 import { DatosService } from 'src/app/services/datos.service';
+import { NgFor } from '@angular/common';
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+    selector: 'app-menu',
+    templateUrl: './menu.component.html',
+    styleUrls: ['./menu.component.scss'],
+    imports: [NgFor],
 })
 export class MenuComponent {
   /** asingamos constantes */
@@ -14,7 +16,7 @@ export class MenuComponent {
   /** creamos variable de tipo grupo */
   grupoSelected: Bookmarks | undefined;
 
-  constructor(private datosService: DatosService) { }
+  constructor(private datosService: DatosService) {}
 
   ngOnInit() {
     // mostramos el seleccionado, al inicio no hay ninguno

@@ -1,21 +1,28 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Bookmarks } from '../../services/bookmarks';
 import { DatosService } from '../../services/datos.service';
+import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-bookmarks',
-  templateUrl: './bookmarks.component.html',
-  styleUrls: ['./bookmarks.component.scss']
+    selector: 'app-bookmarks',
+    templateUrl: './bookmarks.component.html',
+    styleUrls: ['./bookmarks.component.scss'],
+    imports: [
+        NgFor,
+        NgIf,
+        FormsModule,
+        UpperCasePipe,
+    ],
 })
 export class BookmarksComponent implements OnInit {
-
   // TODO modo edicion
   editMode: boolean | undefined;
 
   // variable bookmarks
   bookmarks: Bookmarks[] | undefined;
 
-  constructor(public datosService: DatosService) { }
+  constructor(public datosService: DatosService) {}
 
   ngOnInit() {
     // se obtiene el grupo mediante el servicio de datos
@@ -43,5 +50,4 @@ export class BookmarksComponent implements OnInit {
       this.editMode = true;
     }
   }
-
 }

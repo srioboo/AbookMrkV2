@@ -1,4 +1,4 @@
-@import 'src/assets/scss/styles';
+@use "src/assets/scss/styles";
 
 .flex-container {
   display: flex;
@@ -19,6 +19,6 @@
 
   .main {
     /*flex-grow: 10;*/
-    flex: 0 0 70%
+    flex: 0 0 70%;
   }
 }

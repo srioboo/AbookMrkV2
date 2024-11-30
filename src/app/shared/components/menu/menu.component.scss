@@ -1,4 +1,4 @@
-@import 'src/assets/scss/styles';
+@use "src/assets/scss/styles" as *; 
 
 nav {
   background-color: $wine;
@@ -8,7 +8,6 @@ nav {
   color: white;
   //height: 50px;
   align-items: center;
-
 
   .menu {
     margin: 10px 10px 10px 20px;

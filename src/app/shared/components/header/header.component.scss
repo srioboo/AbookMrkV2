@@ -1,6 +1,4 @@
-/*@import '../../../node_modules/bootstrap/scss/_navbar';*/
-/*@import '/../../bootstrap/scss/_nav';*/
-@import 'src/assets/scss/styles';
+@use "src/assets/scss/styles" as *;
 
 header {
   background-color: $wine;
@@ -16,7 +14,8 @@ header {
     font-family: sans-serif;
   }
 
-  .buscador {// TODO: adaptar
+  .buscador {
+    // TODO: adaptar
 
     display: flex;
     justify-content: space-around;
